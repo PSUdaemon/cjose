@@ -54,6 +54,8 @@ var searchData=
   ['cjose_5fjwk_5fec_5fp_5f256',['CJOSE_JWK_EC_P_256',['../jwk_8h.html#a5f7f252635dde03c13704ccce6e06fe5ac24b823e12b69ff6fbe22f9396a6f8bf',1,'jwk.h']]],
   ['cjose_5fjwk_5fec_5fp_5f384',['CJOSE_JWK_EC_P_384',['../jwk_8h.html#a5f7f252635dde03c13704ccce6e06fe5ae446e12e6162bfa91367d0458df71943',1,'jwk.h']]],
   ['cjose_5fjwk_5fec_5fp_5f521',['CJOSE_JWK_EC_P_521',['../jwk_8h.html#a5f7f252635dde03c13704ccce6e06fe5a645829b190e19597971a6d60b1269d25',1,'jwk.h']]],
+  ['cjose_5fjwk_5fget_5fkeydata',['cjose_jwk_get_keydata',['../jwk_8h.html#a51e098b02bd36c15c9646ab0b25cfa75',1,'jwk.h']]],
+  ['cjose_5fjwk_5fget_5fkeysize',['cjose_jwk_get_keysize',['../jwk_8h.html#aa9306915e36d9cc61177709474ed1464',1,'jwk.h']]],
   ['cjose_5fjwk_5fget_5fkid',['cjose_jwk_get_kid',['../jwk_8h.html#a588d067c09809db438ddcfd901919706',1,'jwk.h']]],
   ['cjose_5fjwk_5fget_5fkty',['cjose_jwk_get_kty',['../jwk_8h.html#a8eaf6f85587364c2559d0752280bccf1',1,'jwk.h']]],
   ['cjose_5fjwk_5fimport',['cjose_jwk_import',['../jwk_8h.html#a363343ff381331fe605bb02275a77e95',1,'jwk.h']]],
@@ -78,7 +80,7 @@ var searchData=
   ['cjose_5fjws_5fverify',['cjose_jws_verify',['../jws_8h.html#abc5d5c8757d8144dec16ead80dfb104b',1,'jws.h']]],
   ['cjose_5frealloc_5ffn_5ft',['cjose_realloc_fn_t',['../util_8h.html#a961e89fab81c17b4f4e260b99447df09',1,'util.h']]],
   ['cjose_5fset_5falloc_5ffuncs',['cjose_set_alloc_funcs',['../util_8h.html#aa5c2aabebabb066e431818d7ed5393aa',1,'util.h']]],
-  ['cjose_5fversion',['CJOSE_VERSION',['../version_8h.html#a51b201fe16dc137305cc6a922cedce5c',1,'CJOSE_VERSION():&#160;version.h'],['../version_8h.html#ae4ce61c27d0fcfba9c1ada25d87d425a',1,'cjose_version():&#160;version.h']]],
+  ['cjose_5fversion',['cjose_version',['../version_8h.html#ae4ce61c27d0fcfba9c1ada25d87d425a',1,'cjose_version():&#160;version.h'],['../version_8h.html#a51b201fe16dc137305cc6a922cedce5c',1,'CJOSE_VERSION():&#160;version.h']]],
   ['code',['code',['../structcjose__err.html#a2133ac61f254a1f59ed8737eb7636e29',1,'cjose_err']]],
   ['crv',['crv',['../structcjose__jwk__ec__keyspec.html#a4ec6cea444a869435deec764c552ec83',1,'cjose_jwk_ec_keyspec']]]
 ];

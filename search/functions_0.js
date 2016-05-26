@@ -27,6 +27,8 @@ var searchData=
   ['cjose_5fjwk_5fcreate_5frsa_5fspec',['cjose_jwk_create_RSA_spec',['../jwk_8h.html#ab41d3551ab434a1a75b1057c0fd5c131',1,'jwk.h']]],
   ['cjose_5fjwk_5fderive_5fecdh_5fephemeral_5fkey',['cjose_jwk_derive_ecdh_ephemeral_key',['../jwk_8h.html#ab899b5c3afd65b386bf8a7692343e81c',1,'jwk.h']]],
   ['cjose_5fjwk_5fderive_5fecdh_5fsecret',['cjose_jwk_derive_ecdh_secret',['../jwk_8h.html#abe3a438c94980bf588fa99cbc9e515ad',1,'jwk.h']]],
+  ['cjose_5fjwk_5fget_5fkeydata',['cjose_jwk_get_keydata',['../jwk_8h.html#a51e098b02bd36c15c9646ab0b25cfa75',1,'jwk.h']]],
+  ['cjose_5fjwk_5fget_5fkeysize',['cjose_jwk_get_keysize',['../jwk_8h.html#aa9306915e36d9cc61177709474ed1464',1,'jwk.h']]],
   ['cjose_5fjwk_5fget_5fkid',['cjose_jwk_get_kid',['../jwk_8h.html#a588d067c09809db438ddcfd901919706',1,'jwk.h']]],
   ['cjose_5fjwk_5fget_5fkty',['cjose_jwk_get_kty',['../jwk_8h.html#a8eaf6f85587364c2559d0752280bccf1',1,'jwk.h']]],
   ['cjose_5fjwk_5fimport',['cjose_jwk_import',['../jwk_8h.html#a363343ff381331fe605bb02275a77e95',1,'jwk.h']]],
