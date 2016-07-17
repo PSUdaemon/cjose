@@ -2,6 +2,7 @@ var searchData=
 [
   ['cjose_5fhdr_5falg',['CJOSE_HDR_ALG',['../header_8h.html#abee2c2679528e7356ea361c55f00dfa7',1,'header.h']]],
   ['cjose_5fhdr_5falg_5fdir',['CJOSE_HDR_ALG_DIR',['../header_8h.html#afc7f50f91dad6957c5900321ddd4f41b',1,'header.h']]],
+  ['cjose_5fhdr_5falg_5fhs256',['CJOSE_HDR_ALG_HS256',['../header_8h.html#a604be44778b82e142a5d80de1130ee7e',1,'header.h']]],
   ['cjose_5fhdr_5falg_5fps256',['CJOSE_HDR_ALG_PS256',['../header_8h.html#a80e6e333c44cfd16cf34288fd93c0f7b',1,'header.h']]],
   ['cjose_5fhdr_5falg_5frs256',['CJOSE_HDR_ALG_RS256',['../header_8h.html#a748b04365922ea82976c6993cefab7ad',1,'header.h']]],
   ['cjose_5fhdr_5falg_5frsa_5foaep',['CJOSE_HDR_ALG_RSA_OAEP',['../header_8h.html#ae57be1745ef133c7c4aed504826c56f9',1,'header.h']]],

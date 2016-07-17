@@ -21,6 +21,7 @@ var searchData=
   ['cjose_5fget_5frealloc',['cjose_get_realloc',['../util_8h.html#ae2bc9cb2705fbdceb7919c5de7e27d6b',1,'util.h']]],
   ['cjose_5fhdr_5falg',['CJOSE_HDR_ALG',['../header_8h.html#abee2c2679528e7356ea361c55f00dfa7',1,'header.h']]],
   ['cjose_5fhdr_5falg_5fdir',['CJOSE_HDR_ALG_DIR',['../header_8h.html#afc7f50f91dad6957c5900321ddd4f41b',1,'header.h']]],
+  ['cjose_5fhdr_5falg_5fhs256',['CJOSE_HDR_ALG_HS256',['../header_8h.html#a604be44778b82e142a5d80de1130ee7e',1,'header.h']]],
   ['cjose_5fhdr_5falg_5fps256',['CJOSE_HDR_ALG_PS256',['../header_8h.html#a80e6e333c44cfd16cf34288fd93c0f7b',1,'header.h']]],
   ['cjose_5fhdr_5falg_5frs256',['CJOSE_HDR_ALG_RS256',['../header_8h.html#a748b04365922ea82976c6993cefab7ad',1,'header.h']]],
   ['cjose_5fhdr_5falg_5frsa_5foaep',['CJOSE_HDR_ALG_RSA_OAEP',['../header_8h.html#ae57be1745ef133c7c4aed504826c56f9',1,'header.h']]],
@@ -80,7 +81,7 @@ var searchData=
   ['cjose_5fjws_5fverify',['cjose_jws_verify',['../jws_8h.html#abc5d5c8757d8144dec16ead80dfb104b',1,'jws.h']]],
   ['cjose_5frealloc_5ffn_5ft',['cjose_realloc_fn_t',['../util_8h.html#a961e89fab81c17b4f4e260b99447df09',1,'util.h']]],
   ['cjose_5fset_5falloc_5ffuncs',['cjose_set_alloc_funcs',['../util_8h.html#aa5c2aabebabb066e431818d7ed5393aa',1,'util.h']]],
-  ['cjose_5fversion',['cjose_version',['../version_8h.html#ae4ce61c27d0fcfba9c1ada25d87d425a',1,'cjose_version():&#160;version.h'],['../version_8h.html#a51b201fe16dc137305cc6a922cedce5c',1,'CJOSE_VERSION():&#160;version.h']]],
+  ['cjose_5fversion',['CJOSE_VERSION',['../version_8h.html#a51b201fe16dc137305cc6a922cedce5c',1,'CJOSE_VERSION():&#160;version.h'],['../version_8h.html#ae4ce61c27d0fcfba9c1ada25d87d425a',1,'cjose_version():&#160;version.h']]],
   ['code',['code',['../structcjose__err.html#a2133ac61f254a1f59ed8737eb7636e29',1,'cjose_err']]],
   ['crv',['crv',['../structcjose__jwk__ec__keyspec.html#a4ec6cea444a869435deec764c552ec83',1,'cjose_jwk_ec_keyspec']]]
 ];
