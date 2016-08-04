@@ -24,7 +24,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">CJOSE
-   &#160;<span id="projectnumber">0.3.0</span>
+   &#160;<span id="projectnumber">0.4.0</span>
    </div>
   </td>
  </tr>
@@ -86,6 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -96,32 +97,90 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Utility functions and data structures for CJOSE.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stddef.h&gt;</code><br />
+<code>#include &lt;stdint.h&gt;</code><br />
+<code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &lt;openssl/rsa.h&gt;</code><br />
 </div>
 <p><a href="util_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a097bcd8936b4bfea3f61e15be127af16"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a097bcd8936b4bfea3f61e15be127af16"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CJOSE_OPENSSL_11X</b>&#160;&#160;&#160;OPENSSL_VERSION_NUMBER &gt;= 0x10100005L</td></tr>
+<tr class="separator:a097bcd8936b4bfea3f61e15be127af16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d17ab777c6abbc9932441989509265d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a3d17ab777c6abbc9932441989509265d">CJOSE_UNUSED_PARAM</a>(x)&#160;&#160;&#160;(void)(x)</td></tr>
+<tr class="separator:a3d17ab777c6abbc9932441989509265d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a20741e0742cf778a26cf029873e251af"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a20741e0742cf778a26cf029873e251af">cjose_alloc_fn_t</a>) (size_t)</td></tr>
 <tr class="separator:a20741e0742cf778a26cf029873e251af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d276217b48462f4e3a62b592c194471"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a3d276217b48462f4e3a62b592c194471">cjose_alloc3_fn_t</a>) (size_t, const char *, int)</td></tr>
+<tr class="separator:a3d276217b48462f4e3a62b592c194471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a961e89fab81c17b4f4e260b99447df09"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a961e89fab81c17b4f4e260b99447df09">cjose_realloc_fn_t</a>) (void *, size_t)</td></tr>
 <tr class="separator:a961e89fab81c17b4f4e260b99447df09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fa0e54b6953f5b27a19915d4159228b"><td class="memItemLeft" align="right" valign="top">typedef void *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a7fa0e54b6953f5b27a19915d4159228b">cjose_realloc3_fn_t</a>) (void *, size_t, const char *, int)</td></tr>
+<tr class="separator:a7fa0e54b6953f5b27a19915d4159228b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaecc0c64e57184357dc9b8ff0d56e5a"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#acaecc0c64e57184357dc9b8ff0d56e5a">cjose_dealloc_fn_t</a>) (void *)</td></tr>
 <tr class="separator:acaecc0c64e57184357dc9b8ff0d56e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab438387b9300975011f6691616d4285f"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ab438387b9300975011f6691616d4285f">cjose_dealloc3_fn_t</a>) (void *, const char *, int)</td></tr>
+<tr class="separator:ab438387b9300975011f6691616d4285f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa5c2aabebabb066e431818d7ed5393aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#aa5c2aabebabb066e431818d7ed5393aa">cjose_set_alloc_funcs</a> (<a class="el" href="util_8h.html#a20741e0742cf778a26cf029873e251af">cjose_alloc_fn_t</a> alloc, <a class="el" href="util_8h.html#a961e89fab81c17b4f4e260b99447df09">cjose_realloc_fn_t</a> realloc, <a class="el" href="util_8h.html#acaecc0c64e57184357dc9b8ff0d56e5a">cjose_dealloc_fn_t</a> dealloc)</td></tr>
 <tr class="separator:aa5c2aabebabb066e431818d7ed5393aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e33cd319f15ab64a9b40e83f0e6413"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac5e33cd319f15ab64a9b40e83f0e6413">cjose_set_alloc_ex_funcs</a> (<a class="el" href="util_8h.html#a3d276217b48462f4e3a62b592c194471">cjose_alloc3_fn_t</a> alloc3, <a class="el" href="util_8h.html#a7fa0e54b6953f5b27a19915d4159228b">cjose_realloc3_fn_t</a> realloc3, <a class="el" href="util_8h.html#ab438387b9300975011f6691616d4285f">cjose_dealloc3_fn_t</a> dealloc3)</td></tr>
+<tr class="separator:ac5e33cd319f15ab64a9b40e83f0e6413"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e7fc330e51442b5aafbeba1f393b4c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_8h.html#a20741e0742cf778a26cf029873e251af">cjose_alloc_fn_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a4e7fc330e51442b5aafbeba1f393b4c7">cjose_get_alloc</a> ()</td></tr>
 <tr class="separator:a4e7fc330e51442b5aafbeba1f393b4c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ba664b68eac44005a7b0da790c0c9ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_8h.html#a3d276217b48462f4e3a62b592c194471">cjose_alloc3_fn_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a2ba664b68eac44005a7b0da790c0c9ba">cjose_get_alloc3</a> ()</td></tr>
+<tr class="separator:a2ba664b68eac44005a7b0da790c0c9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2bc9cb2705fbdceb7919c5de7e27d6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_8h.html#a961e89fab81c17b4f4e260b99447df09">cjose_realloc_fn_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ae2bc9cb2705fbdceb7919c5de7e27d6b">cjose_get_realloc</a> ()</td></tr>
 <tr class="separator:ae2bc9cb2705fbdceb7919c5de7e27d6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab652bf6590a2fbd276c66212131546a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_8h.html#a7fa0e54b6953f5b27a19915d4159228b">cjose_realloc3_fn_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ab652bf6590a2fbd276c66212131546a4">cjose_get_realloc3</a> ()</td></tr>
+<tr class="separator:ab652bf6590a2fbd276c66212131546a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29af3d34fdc8bd412aaf89b8e235cf25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_8h.html#acaecc0c64e57184357dc9b8ff0d56e5a">cjose_dealloc_fn_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a29af3d34fdc8bd412aaf89b8e235cf25">cjose_get_dealloc</a> ()</td></tr>
 <tr class="separator:a29af3d34fdc8bd412aaf89b8e235cf25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac133c0f9fd2659538d63478582473695"><td class="memItemLeft" align="right" valign="top"><a class="el" href="util_8h.html#ab438387b9300975011f6691616d4285f">cjose_dealloc3_fn_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac133c0f9fd2659538d63478582473695">cjose_get_dealloc3</a> ()</td></tr>
+<tr class="separator:ac133c0f9fd2659538d63478582473695"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212b3b1dadc74ad983a5c46d6e18d404"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a212b3b1dadc74ad983a5c46d6e18d404">cjose_const_memcmp</a> (const uint8_t *a, const uint8_t *b, const size_t size)</td></tr>
+<tr class="separator:a212b3b1dadc74ad983a5c46d6e18d404"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Utility functions and data structures for CJOSE. </p>
-</div><h2 class="groupheader">Typedef Documentation</h2>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a3d17ab777c6abbc9932441989509265d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CJOSE_UNUSED_PARAM</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;(void)(x)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Macro to explicitly mark a parameter unused, and usable across multiple compiler/platform environments. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="a3d276217b48462f4e3a62b592c194471"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void*(*  cjose_alloc3_fn_t) (size_t, const char *, int)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Typedef for the enhanced memory allocator function. </p>
+
+</div>
+</div>
 <a class="anchor" id="a20741e0742cf778a26cf029873e251af"></a>
 <div class="memitem">
 <div class="memproto">
@@ -131,7 +190,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Typedef for memory allocator function. </p>
+<p>Typedef for the basic memory allocator function. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab438387b9300975011f6691616d4285f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void(*  cjose_dealloc3_fn_t) (void *, const char *, int)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Typedef for the enhanced memory deallocator function. </p>
 
 </div>
 </div>
@@ -144,7 +216,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Typedef for memory deallocator function. </p>
+<p>Typedef for the basic memory deallocator function. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7fa0e54b6953f5b27a19915d4159228b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void*(*  cjose_realloc3_fn_t) (void *, size_t, const char *, int)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Typedef for the enhanced memory reallocator function. </p>
 
 </div>
 </div>
@@ -157,11 +242,53 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Typedef for memory reallocator function. </p>
+<p>Typedef for the basic memory reallocator function. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a212b3b1dadc74ad983a5c46d6e18d404"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cjose_const_memcmp </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Compares the first n bytes of the memory areas s1 and s2 in constant time.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>[in] The first octet string to compare </td></tr>
+    <tr><td class="paramname">b</td><td>[in] The second octet string to compare </td></tr>
+    <tr><td class="paramname">size</td><td>[in] The length to compare </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>an integer less than, equal to, or greater than zero if the first n bytes of s1 is found, respectively, to be less than, to match, or be greater than the first n bytes of s2 </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a4e7fc330e51442b5aafbeba1f393b4c7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -176,6 +303,23 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieves the configured allocator function. If an allocator function is not set, this function returns a pointer to <code>malloc()</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>The configured allocator function </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2ba664b68eac44005a7b0da790c0c9ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_8h.html#a3d276217b48462f4e3a62b592c194471">cjose_alloc3_fn_t</a> cjose_get_alloc3 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieves the configured enhanced allocator function. If an enhanced allocator function is not set, this function returns a pointer to an internally defined variant that wraps the basic allocator returned by <code><a class="el" href="util_8h.html#a4e7fc330e51442b5aafbeba1f393b4c7">cjose_get_alloc()</a></code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>The configured enhanced allocator function </dd></dl>
 
 </div>
 </div>
@@ -196,6 +340,23 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ac133c0f9fd2659538d63478582473695"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_8h.html#ab438387b9300975011f6691616d4285f">cjose_dealloc3_fn_t</a> cjose_get_dealloc3 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieves the configured enhanced deallocator function. If an enhanced deallocator function is not set, this function returns a pointer to an internally defined variant that wraps the basic allocator returned by <code><a class="el" href="util_8h.html#a29af3d34fdc8bd412aaf89b8e235cf25">cjose_get_dealloc()</a></code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>The configured enhanced allocator function </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ae2bc9cb2705fbdceb7919c5de7e27d6b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -210,6 +371,67 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Retrieve the configured reallocator function. If a reallocator function is not set, this function retursn a pointer to <code>realloc</code>.</p>
 <dl class="section return"><dt>Returns</dt><dd>The configured reallocator function </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab652bf6590a2fbd276c66212131546a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="util_8h.html#a7fa0e54b6953f5b27a19915d4159228b">cjose_realloc3_fn_t</a> cjose_get_realloc3 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieves the configured enhanced reallocator function. If an enhanced reallocator function is not set, this function returns a pointer to an internally defined variant that wraps the basic allocator returned by <code><a class="el" href="util_8h.html#ae2bc9cb2705fbdceb7919c5de7e27d6b">cjose_get_realloc()</a></code>.</p>
+<dl class="section return"><dt>Returns</dt><dd>The configured enhanced allocator function </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5e33cd319f15ab64a9b40e83f0e6413"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cjose_set_alloc_ex_funcs </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="util_8h.html#a3d276217b48462f4e3a62b592c194471">cjose_alloc3_fn_t</a>&#160;</td>
+          <td class="paramname"><em>alloc3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="util_8h.html#a7fa0e54b6953f5b27a19915d4159228b">cjose_realloc3_fn_t</a>&#160;</td>
+          <td class="paramname"><em>realloc3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="util_8h.html#ab438387b9300975011f6691616d4285f">cjose_dealloc3_fn_t</a>&#160;</td>
+          <td class="paramname"><em>dealloc3</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the enhanced allocator and deallocator functions. This function provides improved support for OpenSSL &gt;= 1.1.x.</p>
+<p><b>NOTE:</b> This function is mutually exclusive from <code><a class="el" href="util_8h.html#aa5c2aabebabb066e431818d7ed5393aa">cjose_set_alloc_funcs()</a></code>. Both SHOULD NOT be called.</p>
+<p>If <code>alloc3</code> is NULL, any previously set allocator function is cleared and the the default allocator <code>malloc()</code> is used.</p>
+<p>If <code>dealloc3</code> is NULL, the default dallocator <code>free()</code> is used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alloc3</td><td>[in] The custom allocator function to use for OpenSSL &gt;= 1.1.0, called with extra file/line params. </td></tr>
+    <tr><td class="paramname">realloc3</td><td>[in] The custom reallocator function to use for OpenSSL &gt;= 1.1.0, called with extra file/line params. </td></tr>
+    <tr><td class="paramname">dealloc3</td><td>[in] The custom deallocator function to use for OpenSSL &gt;= 1.1.0, called with extra file/line params. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -243,7 +465,8 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the allocator and deallocator functions.</p>
-<p>If <code>alloc</code> is NULL, any previously set allocator function is clared and the the default allocator <code>malloc()</code> is used.</p>
+<p><b>NOTE:</b> This function is mutually exclusive from <code><a class="el" href="util_8h.html#ac5e33cd319f15ab64a9b40e83f0e6413">cjose_set_alloc_ex_funcs()</a></code>. Both SHOULD NOT be called.</p>
+<p>If <code>alloc</code> is NULL, any previously set allocator function is cleared and the the default allocator <code>malloc()</code> is used.</p>
 <p>If <code>dealloc</code> is NULL, the default dallocator <code>free()</code> is used.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -259,7 +482,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sun Jul 17 2016 09:45:22 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Aug 4 2016 11:10:00 for CJOSE by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
